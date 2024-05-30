@@ -18,7 +18,7 @@ public class StudentController {
 @Autowired
 StudentService si;
 
-@PostMapping("/addData")
+@PostMapping("/postData")
 public ResponseEntity<Students> addData(@RequestBody Students s)
 {
 	si.addData(s);
